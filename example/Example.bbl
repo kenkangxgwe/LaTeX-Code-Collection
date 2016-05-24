@@ -1,0 +1,18 @@
+\providecommand{\noopsort}[1]{}\providecommand{\singleletter}[1]{#1}%
+\begin{thebibliography}{1}
+
+\bibitem{WebName}
+Web Author.
+\newblock Web title, 2016.
+
+\bibitem{BookName2000}
+Author1 and author2.
+\newblock {\em Book Title}.
+\newblock Press, 2000.
+
+\bibitem{ArticleName2001}
+Author1 and Author2.
+\newblock Article title.
+\newblock {\em Journal Name}, 12(8):25--28, 2001.
+
+\end{thebibliography}
