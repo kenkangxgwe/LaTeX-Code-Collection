@@ -3,8 +3,8 @@
 % xeCJK supports custom fonts
 \usepackage{xeCJK}
 % Customize CJK Fonts
-\setCJKmainfont[BoldFont={NotoSansCJKsc-Bold.otf}]{NotoSansCJKsc-Regular.otf}
 \usepackage{fontspec}
+\setCJKmainfont[BoldFont={NotoSansCJKsc-Bold.otf}]{NotoSansCJKsc-Regular.otf}
 \usepackage{amsmath,amssymb}
 \usepackage{amsthm}
 % For Greek letter outside the math environment $...$
@@ -26,7 +26,8 @@
 \linespread{1.5}
 \usepackage[]{cite}
 \usepackage{pdfsync}
-
+% Affilation
+\usepackage{authblk}
 % Enable hyperlinks
 \usepackage[
     colorlinks,
@@ -36,10 +37,12 @@
     bookmarks=true
     bookmarkopen
     ] {hyperref}
-
 % Translate keywords into Chinese
 % \renewcommand\abstractname{摘\ 要}  
 % \def\andname{\hspace*{-0.5em}}
+% \renewcommand\Authsep{，}
+% \renewcommand\Authand{，}
+% \renewcommand\Authands{，}
 % \renewcommand\figurename{图}  
 % \renewcommand\tablename{表}  
 % \renewcommand\refname{参考文献}  
