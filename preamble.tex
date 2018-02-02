@@ -1,49 +1,55 @@
 % Enlarge the text area
 \usepackage{fullpage}
-% xeCJK supports custom fonts
-\usepackage{xeCJK}
+% ctex enables Chinese fonts 
+\usepackage[UTF8, heading = false]{ctex}
 % Customize CJK Fonts
 \usepackage{fontspec}
-\setCJKmainfont[BoldFont={NotoSansCJKsc-Bold.otf}]{NotoSansCJKsc-Regular.otf}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKmonofont{Noto Sans Mono CJK SC}
 \usepackage{amsmath,amssymb}
 \usepackage{amsthm}
 % For Greek letter outside the math environment $...$
 \usepackage{upgreek}
+% For vector and matrix
+\usepackage{physics}
 % For Units and Physical Constants
 \usepackage{siunitx}
 % For includegraphics
 \usepackage{graphicx}
+% Customize figure path
+\graphicspath{{../figures/}}
 % Customize the style of enumerate environment
 \usepackage{enumitem}
 % Centering the caption of a figure or table
 \usepackage[justification=centering]{caption}
 % Enable subfigures
 \usepackage{subcaption}
+% Include full PDF pages
+\usepackage{pdfpages}
 % Indent very first line of a paragraph
 \usepackage{indentfirst} 
 \setlength{\parindent}{2em}
 % Customize Linespread
 \linespread{1.5}
-\usepackage[]{cite}
+\usepackage{cite}
 \usepackage{pdfsync}
 % Affilation
 \usepackage{authblk}
 % Enable hyperlinks
 \usepackage[
-    colorlinks,
-    linkcolor=blue,
-    anchorcolor=yellow,
-    citecolor=red,
-    bookmarks=true
-    bookmarkopen
-    ] {hyperref}
-% Translate keywords into Chinese
-% \renewcommand\abstractname{摘\ 要}  
-% \def\andname{\hspace*{-0.5em}}
-% \renewcommand\Authsep{，}
-% \renewcommand\Authand{，}
-% \renewcommand\Authands{，}
-% \renewcommand\figurename{图}  
-% \renewcommand\tablename{表}  
-% \renewcommand\refname{参考文献}  
+colorlinks,
+linkcolor=blue,
+anchorcolor=yellow,
+citecolor=red,
+bookmarks=true
+bookmarkopen
+] {hyperref}
 
+% Constant E
+\newcommand*{\ee}{\mathrm{e}}
+% Diff operator
+\newcommand*{\diff}{\mathop{}\!\mathrm{d}}
+% CPP
+\newcommand{\CPP}{C\nolinebreak\raisebox{.1ex}{\small ++}}
+% C#
+\newcommand{\CS}{C\nolinebreak\raisebox{.1ex}{\small \#}}

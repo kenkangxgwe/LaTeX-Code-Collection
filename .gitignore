@@ -1,4 +1,4 @@
-*.log
-*.out
-*.synctex
-*.synctex.gz
+auto
+/example/*
+!/example/Example.tex
+
