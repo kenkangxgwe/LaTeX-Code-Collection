@@ -1,4 +1,5 @@
 auto
 /example/*
 !/example/Example.tex
+!/example/Example.pdf
 
